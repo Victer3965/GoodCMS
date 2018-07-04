@@ -1,0 +1,9 @@
+php_value display_errors Off
+php_flag magic_quotes 1
+php_flag magic_quotes_gpc 1
+php_value mbstring.http_input auto
+php_value date.timezone Europe/Moscow
+php_value include_path 'engine'
+RewriteEngine On
+RewriteBase /
+ErrorDocument 404 /error404.php

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <connections>
+        <connection name="default" provider="\DataProviders\SQL"
+                    connectionString="mysql:host=localhost;dbname=goodcms;charset=utf8"
+                    user="goodcms" password="" />
+        <connection name="debug" provider="\DataProviders\SQL"
+                    connectionString="mysql:host=localhost;dbname=goodcms_debug;charset=utf8"
+                    user="goodcms" password="" />
+    </connections>
+    <settings>
+        <!--property name="allowCodeBlocks" value="false" /-->
+        <property name="masterPage" value="MasterPage.php" />
+        <property name="defaultConnection" value="debug" />
+    </settings>
+</configuration>

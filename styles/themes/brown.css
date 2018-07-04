@@ -1,0 +1,19 @@
+body {
+    background: #e7f9df none;
+}
+
+body > header {
+    background-image: url('/images/server/bg-header-4.jpg');
+}
+
+header .menu {
+    background: rgba(75, 31, 37, 0.7);
+}
+
+header .menu > .menu-item:hover > .menu-item-text {
+    color: #4b1f25;
+}
+
+a {
+    color: #4b1f25;
+}

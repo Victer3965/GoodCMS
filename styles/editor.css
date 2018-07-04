@@ -1,0 +1,9 @@
+.edit-panel{
+	padding:10px;
+	background:#fFe none;
+}
+
+.edit-panel .action{
+	padding:10px;
+	border:1px solid #555;
+}

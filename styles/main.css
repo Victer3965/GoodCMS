@@ -1,0 +1,350 @@
+﻿body{
+    padding:0;
+    margin:0;
+    font:12pt Verdana,sans;
+    background:#e8f1ff none;
+}
+body > header {
+    padding: 10px;
+    background: #eef url(/images/server/bg-header-3.jpg) no-repeat scroll center center;
+    background-size:cover;
+    position:relative;
+    min-height:100px;
+}
+/*
+body > header:before{
+    content:'';
+    display:block;
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background: rgba(100,150,250,0.3);
+}
+*/
+.panel-admin {
+    padding: 10px;
+    background: #fee none;
+    margin:-10px -10px 10px;
+}
+
+.panel-admin .action {
+    padding: 10px;
+    border: 1px solid #555;
+}
+
+div.debug {
+    display: none;
+}
+
+div.panel-service{
+    display:table;
+    width:100%;
+}
+
+div.panel-service>*{
+    display:table-cell !important;
+    width: 1px;
+    white-space: nowrap;
+    vertical-align:top;
+}
+
+div.panel-service div.user-control {
+}
+
+header .homepage {
+    display: inline-block;
+    vertical-align: top;
+    height: 150px;
+}
+header .homepage:before {
+    content:'';
+    display: block;
+    height: 150px;
+    width:300px;
+    background: transparent url('/images/server/logo.png') no-repeat scroll 0 0;
+}
+
+div.panel-service form[action="/search"] {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    text-align:right;
+    width:100%;
+}
+
+div.panel-service .user-control {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+}
+
+.user-panel{
+    height: 50px;
+    line-height: 1.5;
+}
+.user-panel .user-avatar-mini{
+    float: left;
+    margin: 9px 0;
+}
+.user-panel .user-panel-name{
+    display: block;
+    margin-left: 50px;
+}
+
+div.panel-service .user-control .user-menu {
+    display: none;
+    background: #fff;
+    border: 1px solid #333;
+    position: absolute;
+    z-index:10;
+    right: 0;
+}
+
+div.panel-service .user-control:hover .user-menu {
+    display: block;
+}
+
+ol.list.user-menu-numeric-list {
+    padding: 0;
+    margin: 0;
+}
+
+ol.list.user-menu-numeric-list > li {
+    padding: 5px 20px;
+    line-height: 1.5;
+    list-style: none;
+}
+
+ol.list.user-menu-numeric-list > li:hover {
+    background: #ccc none;
+}
+
+div.panel-service .user-control .panel-login .link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #eee none;
+    border: 1px solid #aaa;
+    margin-left: 10px;
+    line-height: 1.5;
+}
+
+div.panel-service .user-control .panel-login .link:hover {
+    background: #ccc none;
+}
+
+header .menu {
+    display: block;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    background:rgba(38,71,161,0.7);
+    position: relative;
+    color: #fff;
+    margin:10px -10px -10px;
+}
+
+header .menu > .menu-item {
+    display: inline-block;
+    cursor: default;
+    background: transparent none;
+    transition: background-color 250ms;
+}
+
+header .menu .menu-item > .menu-item-text {
+    display: block;
+    padding: 10px 20px;
+    color:#fff;
+    text-decoration:none;
+    transition: color 250ms;
+}
+
+header .menu .menu-item:hover {
+    background: #fff none;
+    transition: background-color 250ms;
+}
+
+header .menu .menu-item:hover > .menu-item-text {
+    color:#2647a1;
+    transition: color 250ms;
+}
+
+header .menu .menu-item > .sub-menu {
+    display:none;
+    background:rgba(38,71,161,1);
+    position:absolute;
+    padding:3px 0 5px;
+}
+
+header .menu .menu-item > .sub-menu > .menu-item{
+    display:block;
+}
+
+header .menu .menu-item:hover > .sub-menu {
+    display:block;
+}
+
+.error {
+    padding: 10px 20px;
+    border: 1px solid #800;
+    background: #faa;
+    color: #300;
+}
+
+.form-login {
+    display: block;
+    width: 300pt;
+    margin: 10px auto;
+    border: 1px solid #333;
+}
+
+.form-login label {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-login input {
+    display: block;
+    margin: 0 auto;
+}
+
+.form-login a {
+    display: inline-block;
+    width: 50%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.form-login a+a{
+
+/*    -webkit-column-rule: 4px outset #ff00ff; /* Chrome, Safari, Opera */
+/*    -moz-column-rule: 4px outset #ff00ff; /* Firefox */
+/*    column-rule: 4px outset #ff00ff;
+    
+    border-left: 1px inset #000;
+    margin-left: -1px;*/
+}
+
+.form-login {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.text-center{
+
+    text-align: center;
+}
+
+.form-login input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+}
+
+vr{
+    display: inline-block;
+    width: 0;
+    border-left: 1px solid #000;
+    border-right: 1px solid #aaa;
+    border-top: 0 none;
+    border-bottom: 0 none;
+    height: auto;
+    overflow: hidden;
+    margin: 0 -1px;
+}
+vr:before{
+    content:'\xa0';
+}
+
+
+body .animated-dragon{
+    position:absolute;
+    left:250px;
+    bottom:100%;
+    transform: scaleX(1);
+    margin-bottom: -50px;
+}
+
+body .animated-dragon.opposite{
+    left:auto;
+    right:550px;
+    transform: scaleX(-1);
+}
+
+
+.form-login a{
+    text-decoration: none;
+}
+
+
+/* красно-коричневая тема */
+
+.gc-widget-area .gc-widget-spacer{
+    display: block;
+    border: 0 none;
+    margin:10px 0 0;
+    height:0;
+    outline: 0 none;
+}
+
+.gc-widget-area.edit{
+    border:1px solid #88f;
+    padding:5px;
+}
+
+/*.gc-widget-area.edit */.gc-widget{
+    border:1px solid #88f;
+}
+
+/*.gc-widget-area.edit */.gc-widget .gc-widget-title{
+    color:#fff;
+    background: #88f;
+    padding:5px 10px;
+    cursor: default;
+}
+
+.gc-widget .gc-widget-menu-button{
+    float: left;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #fff url(/images/btn-drop-down.png) no-repeat scroll center center;
+    margin: 0 10px 0 0;
+    position:relative;
+}
+
+.gc-widget-menu-button .gc-widget-menu{
+    visibility: hidden;
+    position:absolute;
+    top:100%;
+    left:0;
+    background: #88f;
+    border: 1px solid #88f;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 500ms 500ms, z-index 0ms 1000ms, visibility 0ms 1000ms;
+}
+
+.gc-widget-menu-button:hover .gc-widget-menu{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 500ms 500ms, z-index 0ms 500ms, visibility 0ms 500ms;
+}
+
+.gc-widget-menu-button .gc-widget-menu .gc-menu-action{
+    display: block;
+    padding:5px 10px;
+    background: transparent;
+    color: #fff;
+    border: 0 none;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.gc-widget-menu-button .gc-widget-menu .gc-menu-action:hover{
+    background: #fff;
+    color: #88f;
+}
